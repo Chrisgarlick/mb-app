@@ -1,6 +1,22 @@
-<h1>Message Board Homepage</h1>
-<ul>
-    {% for post in all_posts_list %}
-        <li>{{ post.text }}</li>
-    {% endfor %}
-</ul>
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Board</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header class="title">
+        <h1>Message Board Homepage</h1>
+    </header>
+    <div class="message">
+        <ul>
+            {% for post in all_posts_list %}
+                <li>{{ post.text }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
