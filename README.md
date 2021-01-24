@@ -1,4 +1,4 @@
-A Simple Message Board App
+A Very Simple Message Board App
 
 I have created a one page Message board app using Python, Django, HTML and CSS.<br>
 Messages can only be updated through the Admin Portal which was created using Databases and a models.py file
